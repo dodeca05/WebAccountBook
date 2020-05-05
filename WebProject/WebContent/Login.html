@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+html, body { margin: 0; padding: 0; }
+header {
+	width:100%; height:80px;
+	text-align: center;
+	font-size:300%; font-family:'Bauhaus 93';
+}
+nav {
+	width: 100%;
+	height: 50px;
+	vertical-align: middle;
+	float: left;
+	text-align: center;
+}
+section {
+	width: 79%;  float: left;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 2px solid skyblue;
+}
+aside { width: 19%;  float: left; }
+p {
+	text-decoration: none;
+	width: 20%; float:left;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 2px solid skyblue;
+	background-color: rgba(0,0,0,0);
+	font-weight: bold;
+	color: skyblue;
+	padding: 5px;
+	vertical-align: middle;
+}
+a {
+		text-decoration: none;
+		width: 24%; float:left;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border: 2px solid skyblue;
+		background-color: rgba(0,0,0,0);
+		font-weight: bold;
+		color: skyblue;
+		padding: 5px;
+	}
+a:hover{
+	color:white; background-color: skyblue;
+}
+button { 
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid skyblue;
+	background-color: rgba(0,0,0,0);
+	font-weight: bold;
+	color: skyblue;
+	padding: 5px;
+}
+button:hover{ color:white; background-color: skyblue; }
+
+form {
+	border: 2px solid skyblue;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	
+	font-family: 'Arial';
+}
+.textinput {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.submitinput{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid skyblue;
+	background-color: rgba(0,0,0,0);
+	font-weight: bold;
+	color: skyblue;
+	padding: 5px;
+}
+.submitinput:hover{
+	color:white; background-color: skyblue;
+}
+.buttoninput{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid skyblue;
+	background-color: rgba(0,0,0,0);
+	font-weight: bold;
+	color: skyblue;
+	padding: 5px;
+}
+.buttoninput:hover{
+	color:white; background-color: skyblue;
+}
+	.logindiv {
+		text-decoration: none;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		border: 2px solid skyblue;
+		background-color: rgba(0,0,0,0);
+		font-weight: bold;
+		color: skyblue;
+		padding: 5px;
+		vertical-align: middle;
+	}
+	</style>
+</head>
+<body>
+	<header class="header">
+		Smart Account Book
+	</header>
+	<nav class="nav">
+		<a href="Lobby.jsp">로비</a>
+		<a href="AccountBook.jsp">장부</a>
+		<a href="ProductControl.jsp">항목추가</a>
+		<a href="inference.jsp">예측</a>
+	</nav>
+	<section class="section">
+		<b style="font-size: 40px;">로그인</b>
+		<form action="Login.jsp" method="post" style="text-align: center; padding-top: 30px; padding-bottom: 30px; ">
+			ID : <input type="text" placeholder="ID" name="ID" autofocus><br><br>
+			PW : <input type="password" placeholder="Password" name="password"><br><br>
+		<input type="submit" value="로그인" class="submitinput"> <input type="button" value="회원가입" onclick="location.href='Register.html'" class="buttoninput"><br>
+	</form>
+	</section>
+	<aside class="aside">
+	</aside>
+	
+</body>
+</html>
