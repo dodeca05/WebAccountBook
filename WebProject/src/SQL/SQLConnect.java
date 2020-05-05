@@ -13,9 +13,9 @@ public class SQLConnect {
 		
 		try{
 			String driverName = "org.gjt.mm.mysql.Driver"; 
-			String dbURL = "jdbc:mysql://localhost:3305/testdb";
+			String dbURL = "jdbc:mysql://localhost:3305/";//DB
 			Class.forName(driverName); 
-			this.con = (Connection) DriverManager.getConnection(dbURL, "root", "565898"); 
+			this.con = (Connection) DriverManager.getConnection(dbURL, "", ""); //DB 계정
 			this.stmt = (Statement) con.createStatement();
 			
 			

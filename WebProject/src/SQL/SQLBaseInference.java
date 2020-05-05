@@ -11,8 +11,8 @@ import java.util.Calendar;
 import java.util.Scanner;
 
 public class SQLBaseInference {
-	private final String workspace="C:/WebWorkSpace";
-	private final String AnacondaPath="C:/users/56589/.conda/envs/tfstudy2/python.exe";
+	private final String workspace="C:/WebWorkSpace";//수정
+	private final String AnacondaPath="C:/users/56589/.conda/envs/tfstudy2/python.exe";//수정
 	
 	private String ID;
 	private int row;
